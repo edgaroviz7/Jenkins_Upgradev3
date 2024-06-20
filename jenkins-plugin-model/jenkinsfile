@@ -11,10 +11,6 @@ pipeline {
                     // Print the job name and build number
                     echo "Job Name: $jobName"
                     echo "Build Number: $buildNumber"
-
-                    // Use them in shell commands
-                    sh 'sudo docker --version'
-                    sh 'sudo dotnet --info'
                 }
             }
         }
